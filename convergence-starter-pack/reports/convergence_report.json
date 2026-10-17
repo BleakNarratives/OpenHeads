@@ -1,0 +1,121 @@
+{
+  "clusters": [
+    {
+      "cluster_id": "cl-7cebc4fd6c",
+      "confidence_basis": "symbol-overlap",
+      "conflicts": [],
+      "members": [
+        {
+          "manifest_id": "3be715f19b392191",
+          "shared_symbols": [
+            "join_root"
+          ],
+          "source_path": "overlap_b.py"
+        },
+        {
+          "manifest_id": "7088086cf2ab8c15",
+          "shared_symbols": [
+            "join_root"
+          ],
+          "source_path": "overlap_a.py"
+        }
+      ],
+      "overlap_rationale": "symbol 'join_root' is defined independently in 2 manifests",
+      "recommendation": "needs-verification"
+    },
+    {
+      "cluster_id": "cl-8c94761364",
+      "confidence_basis": "symbol-overlap",
+      "conflicts": [],
+      "members": [
+        {
+          "manifest_id": "3be715f19b392191",
+          "shared_symbols": [
+            "normalize_path"
+          ],
+          "source_path": "overlap_b.py"
+        },
+        {
+          "manifest_id": "7088086cf2ab8c15",
+          "shared_symbols": [
+            "normalize_path"
+          ],
+          "source_path": "overlap_a.py"
+        }
+      ],
+      "overlap_rationale": "symbol 'normalize_path' is defined independently in 2 manifests",
+      "recommendation": "needs-verification"
+    }
+  ],
+  "counts": {
+    "clusters": 2,
+    "evidence": 7,
+    "manifests": 2,
+    "stubs": 1,
+    "unique_symbols": 3
+  },
+  "manifests": [
+    {
+      "device_id": "deviceA",
+      "files": 4,
+      "manifest_id": "7088086cf2ab8c15",
+      "revision": "norev:8a72c3a850c03e8a",
+      "source_root": "/workspace/convergence-starter-pack/fixture/deviceA",
+      "truncated": false
+    },
+    {
+      "device_id": "deviceB",
+      "files": 2,
+      "manifest_id": "3be715f19b392191",
+      "revision": "norev:72402186b8d21393",
+      "source_root": "/workspace/convergence-starter-pack/fixture/deviceB",
+      "truncated": false
+    }
+  ],
+  "proposed_tasks": [
+    {
+      "acceptance": "Kilo independently confirms shared behaviour by running both implementations; a diff is produced before any change.",
+      "apply": false,
+      "kind": "verify-then-consider",
+      "targets": [
+        "overlap_b.py",
+        "overlap_a.py"
+      ],
+      "task_id": "cl-7cebc4fd6c"
+    },
+    {
+      "acceptance": "Kilo independently confirms shared behaviour by running both implementations; a diff is produced before any change.",
+      "apply": false,
+      "kind": "verify-then-consider",
+      "targets": [
+        "overlap_b.py",
+        "overlap_a.py"
+      ],
+      "task_id": "cl-8c94761364"
+    }
+  ],
+  "stubs": [
+    {
+      "manifest_id": "3be715f19b392191",
+      "source_path": "stub_b.py",
+      "symbol": "promised_but_absent"
+    }
+  ],
+  "unique_symbols": [
+    {
+      "manifest_id": "7088086cf2ab8c15",
+      "source_path": "behaviour_a.py",
+      "symbol": "checksum_of"
+    },
+    {
+      "manifest_id": "7088086cf2ab8c15",
+      "source_path": "unique_a.py",
+      "symbol": "device_a_only_marker"
+    },
+    {
+      "manifest_id": "3be715f19b392191",
+      "source_path": "stub_b.py",
+      "symbol": "promised_but_absent"
+    }
+  ]
+}

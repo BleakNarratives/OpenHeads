@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cluster.schema.json",
+  "title": "cluster",
+  "description": "A proposed relationship between candidates. Similarity is a hypothesis, never a merge decision.",
+  "type": "object",
+  "required": ["cluster_id", "members", "overlap_rationale", "confidence_basis"],
+  "additionalProperties": false,
+  "properties": {
+    "cluster_id": {"type": "string"},
+    "members": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["manifest_id", "source_path", "shared_symbols"],
+        "additionalProperties": false,
+        "properties": {
+          "manifest_id": {"type": "string"},
+          "source_path": {"type": "string"},
+          "shared_symbols": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Symbols present in this member AND at least one other member."
+          }
+        }
+      }
+    },
+    "overlap_rationale": {
+      "type": "string",
+      "description": "Why these are believed related. Names alone are not rationale."
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Known divergences between members."
+    },
+    "confidence_basis": {
+      "enum": ["symbol-overlap", "tested-behaviour", "human-review", "name-only"],
+      "description": "'name-only' must never be treated as mergeable."
+    },
+    "recommendation": {
+      "enum": ["candidate", "not-mergeable", "needs-verification"],
+      "description": "Default is 'candidate' or 'needs-verification'. The pipeline never emits 'merge now'."
+    }
+  }
+}

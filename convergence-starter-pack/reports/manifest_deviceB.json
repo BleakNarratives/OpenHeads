@@ -1,0 +1,22 @@
+{
+  "device_id": "deviceB",
+  "files": [
+    {
+      "language": "python",
+      "path": "overlap_b.py",
+      "sha256": "e426f698999c65d10c82f1c23128bbe81febab85ac811b8a4948ed980a86e66e",
+      "size_bytes": 313
+    },
+    {
+      "language": "python",
+      "path": "stub_b.py",
+      "sha256": "af9aec13523c88651348970584b9820e34817eb0cc09d71bc5729e53d63fd469",
+      "size_bytes": 108
+    }
+  ],
+  "intake_status": "discovered",
+  "manifest_id": "3be715f19b392191",
+  "revision": "norev:72402186b8d21393",
+  "source_root": "/workspace/convergence-starter-pack/fixture/deviceB",
+  "truncated": false
+}

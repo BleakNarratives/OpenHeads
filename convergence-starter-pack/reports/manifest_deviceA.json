@@ -1,0 +1,33 @@
+{
+  "device_id": "deviceA",
+  "files": [
+    {
+      "language": "python",
+      "path": "behaviour_a.py",
+      "sha256": "567f6f3391ce050b22758af372fab6c03e0e94eb6c7d2815c2ef1cee33a1f1a9",
+      "size_bytes": 212
+    },
+    {
+      "language": "python",
+      "path": "overlap_a.py",
+      "sha256": "059be43463f273c27fb253a6f8f09f7071aef69a028ad6408a46fe95b24b292e",
+      "size_bytes": 370
+    },
+    {
+      "language": "python",
+      "path": "unique_a.py",
+      "sha256": "a128f9e84c44eb9d00749a491a90fe3ebe941d1a809a384c72a7f975d4f97370",
+      "size_bytes": 136
+    },
+    {
+      "path": "__pycache__/behaviour_a.cpython-313.pyc",
+      "sha256": "1e60359c5f590c3ee5e3ac1ca80005bb11bb67d46347805f7db88409a5186b81",
+      "size_bytes": 666
+    }
+  ],
+  "intake_status": "discovered",
+  "manifest_id": "7088086cf2ab8c15",
+  "revision": "norev:8a72c3a850c03e8a",
+  "source_root": "/workspace/convergence-starter-pack/fixture/deviceA",
+  "truncated": false
+}

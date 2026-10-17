@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evidence.schema.json",
+  "title": "evidence",
+  "description": "One claim about one source location, with its verification status. A claim without a source_path and location is not evidence.",
+  "type": "object",
+  "required": ["evidence_id", "manifest_id", "claim", "source_path", "evidence_type", "verification_status"],
+  "additionalProperties": false,
+  "properties": {
+    "evidence_id": {"type": "string"},
+    "manifest_id": {
+      "type": "string",
+      "description": "Links back to the repo_manifest that produced this file. Provenance is preserved end to end."
+    },
+    "claim": {"type": "string", "description": "The specific assertion being made."},
+    "source_path": {"type": "string", "description": "File path relative to the manifest's source_root."},
+    "location": {
+      "type": "object",
+      "description": "Symbol or line range. At least one is required in practice.",
+      "additionalProperties": false,
+      "properties": {
+        "symbol": {"type": "string"},
+        "line_start": {"type": "integer", "minimum": 1},
+        "line_end": {"type": "integer", "minimum": 1}
+      }
+    },
+    "evidence_type": {
+      "enum": ["implemented", "partial", "stubbed", "simulated", "tested", "verified", "undocumented"],
+      "description": "Implemented/partial/stubbed/simulated describe the source. Tested/verified require an executed check."
+    },
+    "verification_status": {
+      "enum": ["unverified", "challenged", "confirmed", "disproved"],
+      "description": "A printed PASS is not confirmation. Only an executed check moves this off 'unverified'."
+    },
+    "limitations": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "What this evidence does NOT establish."
+    }
+  }
+}
