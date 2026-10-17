@@ -1,0 +1,5 @@
+
+# Bootstrap artifacts - never commit these
+openheads-kit.tar.gz
+openheads-populate.patch
+*.tar.gz
