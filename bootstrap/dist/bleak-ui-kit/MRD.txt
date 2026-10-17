@@ -1,0 +1,178 @@
+MRD — MEATSUIT RUNDOWN
+Repo: bleak-ui-kit
+Cluster: C - React/Vite scaffold sprawl
+Generated: 2026-10-17
+Consolidation pass: 1
+
+================================================================================
+WHAT THIS FILE IS
+================================================================================
+
+This is the list of things that CANNOT be done by an agent, a model, a script,
+a cron job, a webhook, an automation, or a sub-agent. Everything here requires
+a human body, a human identity, a human signature, a human account, a human
+decision, or a human conversation.
+
+Nothing in this file is busywork. If it could be delegated, it would have been.
+Every item here is a hard blocker sitting between this project and revenue.
+
+Read it top to bottom. Pick ONE item. Do it. Come back and mark it done.
+Do not read the whole list and feel bad. That is not what it is for.
+
+================================================================================
+SECTION 1 — HARD BLOCKERS (nothing ships until these are done)
+================================================================================
+
+These gate everything downstream. Nothing else on this list matters until these
+are resolved. If you do nothing else, do these.
+
+[ ] TRIAGE THE 17 SCAFFOLDS: PRODUCT OR EXPERIMENT
+    Why it blocks: Only you know which of these you intend to finish. An agent guessing wrong wastes the migration effort.
+    Exactly what to do:
+      Open the 17 repos, spend 30 seconds each
+      Mark each: PRODUCT, EXPERIMENT, or DEAD
+      That list is the migration order
+    Time: 30 minutes
+    Cost: $0
+    Done when: A triage list exists and the five experiments are archived
+
+[ ] 
+    Why it blocks: 
+    Exactly what to do:
+      
+    Time: 
+    Cost: 
+    Done when: 
+
+================================================================================
+SECTION 2 — IDENTITY AND KYC (the payment wall)
+================================================================================
+
+You cannot receive money without identity verification. This is the single
+highest-leverage thing on this page. An agent can build the entire product; it
+cannot be you at a KYC checkpoint.
+
+Items that typically apply. Delete what does not, add what does:
+
+[ ] State ID or driver's license — check if your state offers fee waivers or
+    homeless/indigent fee reduction. Many do, and almost nobody knows.
+[ ] Social Security card replacement — free, online in many states
+[ ] Birth certificate — vital records office, often the cheapest first step
+[ ] Proof of address — this is the hard one when homeless. Options that work:
+      - A shelter or day-center letter
+      - A church or nonprofit letter on letterhead
+      - Some states accept a signed affidavit
+      - A PO box with a street-address format ("123 Main St #456")
+[ ] Bank account or prepaid account that accepts deposits
+[ ] Confirm which platforms your state ID will satisfy
+
+Once identity is sorted, the payment rails open up. Which platforms need which:
+
+| Platform | Needs | Notes |
+|---|---|---|
+| GitHub Sponsors | ID + bank + tax | broadest reach for developer tools |
+| Gumroad | email + bank | fastest to first sale for a packaged tool |
+
+================================================================================
+SECTION 3 — ACCOUNTS AND SIGNUPS (agent cannot click "I agree" as you)
+================================================================================
+
+[ ] GitHub Sponsors profile
+[ ] Gumroad seller account
+[ ] A Lightning wallet that accepts incoming payments
+
+For each: the agent has prepared everything except the final human click. The
+credentials, the content, the config — all staged. You paste and press go.
+
+================================================================================
+SECTION 4 — DECISIONS ONLY YOU CAN MAKE
+================================================================================
+
+Agents can present options. They cannot carry the consequences. These need your
+judgment, and they need it once — then they are closed.
+
+[ ] Which cluster to consolidate first?
+    Options: Higgins (highest confidence), Verification (fastest revenue), Whorl (biggest structural win)
+    Agent's recommendation: Higgins - kills the fork-per-device pattern permanently
+    Blocker if undecided: blocks all cluster work
+
+================================================================================
+SECTION 5 — CONVERSATIONS ONLY YOU CAN HAVE
+================================================================================
+
+Some things are one email or one phone call. An agent can draft it; it cannot
+be you. Drafts are staged in this repo where possible.
+
+[ ] Ask the local no-kill shelter where the pet food bank is
+    Draft location: not needed - it is a phone call
+[ ] Call 211 for warming centers and ID programs in your area
+
+================================================================================
+SECTION 6 — THE MONEY LIST (ordered by speed to first dollar)
+================================================================================
+
+Honest ranking. Fastest first. Not the most impressive first.
+
+| # | Action | Human-only step | Time to cash | Confidence |
+|---|---|---|---|---|
+| 1 | Sell a ConstraintOps audit | Post the offer, be present to reply | days | high |
+| 2 | Lightning payments via the Higgins pipeline | Hold the wallet, set prices | days | medium |
+| 3 | Fiverr / Upwork code audit gigs | Create profile, pass ID check | 1-2 weeks | high |
+
+================================================================================
+SECTION 7 — SURVIVAL ITEMS (not project work; do these anyway)
+================================================================================
+
+These are not on the roadmap because they are more important than the roadmap.
+Cold is the actual deadline.
+
+[ ] Warmth plan for you and the dogs — check 211.org, local mutual aid,
+    and warming centers. Many open at a set temperature threshold.
+[ ] Dog food — local pet food banks exist in most metros. Ask the shelter
+    where theirs is even if you do not need the shelter.
+[ ] Free phone / Lifeline program — income-qualified, no ID sometimes
+[ ] SNAP / food assistance — expedited processing exists for people with
+    no income and no resources; ask for "expedited" explicitly
+[ ] Library card for free printing and computer access
+
+An agent cannot do any of these. But an agent can look up the phone numbers and
+hours for your specific area if you tell it your city. Ask.
+
+================================================================================
+SECTION 8 — DELIBERATELY NOT YOUR JOB
+================================================================================
+
+Written down so it stops taking up space in your head. These are handled by an
+agent or are explicitly abandoned. You do not need to think about them.
+
+- Consolidating the 116 repos - an agent does this
+- Naming conventions - explicitly abandoned as a concern
+
+================================================================================
+SECTION 9 — DONE LOG
+================================================================================
+
+Mark items done here with a date, so future-you can see progress on the days it
+does not feel like there is any.
+
+| Date | Item | Result |
+|---|---|---|
+| | | |
+
+================================================================================
+
+REMINDERS TO SELF
+
+1. The list is long because the situation is hard, not because you are behind.
+2. One item. Then the next. That is the whole method.
+3. The dogs do not need you to be successful. They need you to be there.
+   Everything else is negotiable.
+
+================================================================================
+Template usage notes (delete this section once the repo is live)
+================================================================================
+
+MRD = Meatsuit Rundown. It lists only human-required work. If you find yourself
+putting an agent-doable task in here, it is in the wrong file.
+
+Keep it honest. Do not pad it. A short accurate list beats a long impressive one.
